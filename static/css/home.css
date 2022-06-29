@@ -1,0 +1,129 @@
+#page-home {
+    background-position: 35vw bottom;
+ }
+
+#page-home .content {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+#page-home header {
+    font-size: 20px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    min-width: 1000px;
+}
+
+#page-home header .titulo{
+    font-size: 50px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    min-width: 220px;
+    height: 72px;
+    border-radius: 8px;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #f0f0f5;
+    transition: 400ms;
+    flex: 1;
+    color: #34cb79;
+    text-align: center;
+}
+
+#page-home header a {
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    min-width: 200px;
+    height: 72px;
+    border-radius: 8px;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #322153;
+    transition: 400ms;
+}
+
+#page-home header a strong {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+#page-home main {
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#page-home main h1 {
+    font-size: 54px;
+    margin-top: 0;
+}
+
+#page-home main p {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+}
+
+#page-home main a {
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    background-color: var(--primary-color);
+    transition: 400ms;
+}
+
+#page-home main form {
+    width: 500px;
+    height: 90px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f5;
+    transition: 400ms;
+}
+
+#page-home main a:hover {
+    background-color: #2fb86e;
+}
+
+#page-home main input:hover {
+    background-color: red;
+    transition: 400ms;
+    color: black;
+}
+
+#page-home main a strong {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+#page-home main form input {
+    background-color: var(--primary-color);
+    flex: 1;
+    color: white;
+    text-align: center;
+    height: 72px;
+    margin-top: 45px;
+    font-weight: bold;
+}

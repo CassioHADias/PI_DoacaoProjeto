@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+           <form method="POST">
+                <h1>{% block title %} Login {% endblock %}</h1>
+                <fieldset>
+                    <legend>
+                        <h4>Área reservada para ONGs cadastradas</h4>
+                    </legend>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="username">Insira o usuário</label>
+                            <input type="text" name="username" required="required">
+                        </div>
+
+                        <div class="field">
+                            <label for="password">Senha</label>
+                            <input type="text" name="password" required="required">
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit">Entrar</button>
+           </form>
+{% endblock %}

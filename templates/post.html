@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form>
+    <h1>{% block title %} {{ post['nome'] }} {% endblock %}</h1>
+    <fieldset>
+        <!-- Incluir a imagem capturada -->
+        <div class="field-group">
+            <div class="field">
+                <img src="/static/assets/univesp.png" alt="univesp" style="width: auto;">
+            </div>
+        </div>
+        <div class="field-group">
+            <div class="field">
+                <label for="nome">Nome da instituição</label>
+                <h4>{{ post['nome'] }}</h4>
+            </div>
+            <div class="field">
+                <label for="tipo">Tipo de ONG</label>
+                <h4>{{ post['tipo'] }}</h4>
+            </div>
+        </div>
+        <div class="field-group">
+            <div class="field">
+                <label for="estado">Estado</label>
+                <h4>{{ post['estado'] }}</h4>
+            </div>
+            <div class="field">
+                <label for="cidade">Cidade</label>
+                <h4>{{ post['cidade'] }}</h4>
+            </div>
+        </div>
+        <div class="field-group">
+            <div class="field">
+                <label for="rua">Avenida/Alameda/Rua/Travessa...</label>
+                <h4>{{ post['rua'] }}</h4>
+            </div>
+        </div>
+        <div class="field-group">
+            <div class="field">
+                <label for="numero">Número/Complemento</label>
+                <h4>{{ post['numero'] }}</h4>
+            </div>
+            <div class="field">
+                <label for="telefone">Telefone</label>
+                <h4>{{ post['telefone'] }}</h4>
+            </div>
+        </div>
+        <div class="field-group">
+            <div class="field">
+                <label for="email">E-mail</label>
+                <h4>{{ post['email'] }}</h4>
+            </div>
+            <div class="field">
+                <label for="redes">Redes sociais</label>
+                <h4>{{ post['redes'] }}</h4>
+            </div>
+        </div>
+        <div class="field-group">
+            <div class="field">
+                <label for="conteudo">Descrição</label>
+                <h4>{{ post['conteudo'] }}</h4>
+            </div>
+        </div>
+    </fieldset>
+</form>
+{% endblock %}
