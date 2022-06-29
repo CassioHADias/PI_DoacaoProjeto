@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+           <main>
+                <h1>{% block title %} Conheça histórias e propósitos. {% endblock %}</h1>
+
+                <p>Ajudamos pessoas a encontrarem ONGs em vários campos de atuação.</p>
+
+                <a href="{{ url_for('cards') }}">
+                    <strong>Pesquisar ONGs</strong>
+                </a>
+
+                <a href="{{  url_for('create') }}">
+                    <strong>Cadastrar ONG</strong>
+                </a>
+            </main>
+{% endblock %}
